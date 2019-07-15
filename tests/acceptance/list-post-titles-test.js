@@ -16,7 +16,9 @@ module('Acceptance | list post titles', function(hooks) {
   });
 
   test('should link to information about me', async function(assert) {
-    
+    await visit('/');
+    await click(".menu-about");
+    assert.equal(currentURL(), '/about', 'should navigate to about me');
   });
 
   test('should list post titles', async function(assert) {
