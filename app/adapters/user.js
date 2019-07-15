@@ -1,8 +1,6 @@
-import DS from 'ember-data';
+import Host from './typicode';
 
-export default DS.JSONAPIAdapter.extend({
-    host: 'https://jsonplaceholder.typicode.com',
-
+export default Host.extend({
     pathForType() {
         return 'users';
     }
