@@ -21,8 +21,9 @@ module('Acceptance | list post titles', function(hooks) {
     assert.equal(currentURL(), '/about', 'should navigate to about me');
   });
 
-  test('should list post titles', async function(assert) {
-    
+  test('should list post TEST titles', async function(assert) {
+    await visit('/');
+    assert.equal(this.element.querySelectorAll('.listing').length, 3, 'should display 3 listings');
   });
 
   test('should show more details for list of post titles', async function(assert) {
