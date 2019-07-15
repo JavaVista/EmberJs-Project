@@ -3,4 +3,14 @@
 
 {{#each model as |post|}}
     <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+
+    <p>User Name: {{post.userId.username}} </p>
+    <p>Company: {{post.userId.company.name}}</p>
+    <p><a href="{{post.userId.website}}"></a></p>
+    <p>Catchphrase: {{post.userId.company.catchPhrase}}</p>
+
+    <p>Author's Name: {{post.userId.name}} </p>
+    <p><a href="mailto:{{post.userId.email}}"></a></p>
+    <p>City: {{post.userId.address.city}} </p>
 {{/each}}
