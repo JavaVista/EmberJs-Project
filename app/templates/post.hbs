@@ -1,15 +1,12 @@
-<h2>My Post Route</h2>
+<h2>Titles</h2>
 {{outlet}}
 
 {{#each pagedContent as |post|}}
-  {{! your app's display logic}}
-    {{#each model as |post|}}
-        <div class="listing">
-            <h3>{{post.title}}</h3>
-            <p>{{post.body}}</p>
-
-            <p>User Name: {{post.userId.username}} </p>
-            <p>Company: {{post.userId.company.name}}</p>
+      <div class="listing">
+          <h3>{{post.title}}</h3>
+          <p>{{post.body}}</p>
+          <p>User Name: {{post.userId.username}} </p>
+          <p>Company: {{post.userId.company.name}}</p>
             {{!-- TODO: Fix format --}}
             <p><a href="{{post.userId.website}}"></a></p>
             <p>Catchphrase: {{post.userId.company.catchPhrase}}</p>
@@ -19,8 +16,6 @@
             <p><a href="mailto:{{post.userId.email}}"></a></p>
             <p>City: {{post.userId.address.city}} </p>
         </div>
-    {{/each}}
 {{/each}}
 
 {{page-numbers content=pagedContent}}
-
