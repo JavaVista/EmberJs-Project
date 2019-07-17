@@ -1,21 +1,43 @@
 <div class="listing">
- <h3>
-     {{post.title}}
-     <button class="btn" type="button"{{action this.toggleContent on='click'}}>More info</button>
- </h3>
+    <div class="container">
+        <h1>
+            {{post.title}}
+            <input type="checkbox" name="modal-toggle" id="modal-toggle" class="modal-toggle" {{action this.toggleContent on='click' }}/>
+            <label for="modal-toggle" onclick></label>
+        </h1>
+    </div>
 
-{{#if this.showPost}}
-    <p>{{post.body}}</p>
-    <p>User Name: {{post.userId.username}} </p>
-    <p>Company: {{post.userId.company.name}}</p>
-    {{!-- TODO: Fix format --}}
-    <p><a href="{{post.userId.website}}"></a></p>
-    <p>Catchphrase: {{post.userId.company.catchPhrase}}</p>
-  
-    <p>Author's Name: {{post.userId.name}} </p>
-    {{!-- TODO: Fix format --}}
-    <p><a href="mailto:{{post.userId.email}}"></a></p>
-    <p>City: {{post.userId.address.city}} </p>
-{{/if}}
-  
+
+    {{#if this.showPost}}
+    <div class="c-modal-manual">
+        <div class="c-modal-manual__content">
+        <p>{{post.body}}</p>
+        <ul>
+            <li>
+                 <p>User Name: {{post.userId.username}} </p>
+            </li>
+            <li>
+                <p>Company: {{post.userId.company.name}}</p>
+            </li>
+            <li>
+                 {{!-- TODO: Fix format --}}
+                <p><a href="{{post.userId.website}}"></a></p>
+            </li>
+            <li>
+                <p>Catchphrase: {{post.userId.company.catchPhrase}}</p>
+            </li>
+            <li>
+                <p>Author's Name: {{post.userId.name}} </p>
+            </li>
+            <li>
+                {{!-- TODO: Fix format --}}
+                <p><a href="mailto:{{post.userId.email}}"></a></p>
+            </li>
+            <li>
+                <p>City: {{post.userId.address.city}} </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+    {{/if}}
 </div>
