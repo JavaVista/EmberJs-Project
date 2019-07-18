@@ -33,7 +33,7 @@ I developed this SPA using the Ember.js Framework that request and shows data fr
 ![Screenshot](public/fullscreen.png)
 Neighborhood Map - Screenshot
 
-![Mobile - Screenshot](public/mobile.png)
+![Mobile - Screenshot](public/mobile_iphone7spacegrey_portrait.png)
 Neighborhood Map - Mobile
 
 ## Technology
