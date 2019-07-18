@@ -30,10 +30,10 @@ I developed this SPA using the Ember.js Framework that request and shows data fr
 
 ### Screenshot
 
-![Screenshot](/src/NeighborhoodMap.png)
+![Screenshot](/dist/fullscreen.png)
 Neighborhood Map - Screenshot
 
-![Mobile - Screenshot](/src/NeighborhoodMap-mobile.png)
+![Mobile - Screenshot](/dist/mobile.png)
 Neighborhood Map - Mobile
 
 ## Technology
