@@ -8,6 +8,7 @@ I developed this SPA using the Ember.js Framework that request and shows data fr
   - [Table of Contents](#Table-of-Contents)
   - [Requirements](#Requirements)
     - [Screenshot](#Screenshot)
+  - [Demo](#Demo)
   - [Technology](#Technology)
   - [Prerequisites](#Prerequisites)
   - [Installation](#Installation)
@@ -35,6 +36,13 @@ Neighborhood Map - Screenshot
 
 ![Mobile - Screenshot](public/mobile_iphone7spacegrey_portrait.png)
 Neighborhood Map - Mobile
+
+## Demo
+
+[App Demo](https://ember-js-project.netlify.com/pos)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/779785f2-aac9-4eb8-a9d7-ed8c6240e434/deploy-status)](https://app.netlify.com/sites/ember-js-project/deploys)
+
 
 ## Technology
 
