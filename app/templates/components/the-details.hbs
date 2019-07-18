@@ -9,35 +9,37 @@
 
 
     {{#if this.showPost}}
-    <div class="c-modal-manual">
-        <div class="c-modal-manual__content">
-        <p>{{post.body}}</p>
-        <ul>
-            <li>
-                 <p>User Name: {{post.userId.username}} </p>
-            </li>
-            <li>
-                <p>Company: {{post.userId.company.name}}</p>
-            </li>
-            <li>
-                 {{!-- TODO: Fix format --}}
-                <p><a href="{{post.userId.website}}"></a></p>
-            </li>
-            <li>
-                <p>Catchphrase: {{post.userId.company.catchPhrase}}</p>
-            </li>
-            <li>
-                <p>Author's Name: {{post.userId.name}} </p>
-            </li>
-            <li>
-                {{!-- TODO: Fix format --}}
-                <p><a href="mailto:{{post.userId.email}}"></a></p>
-            </li>
-            <li>
-                <p>City: {{post.userId.address.city}} </p>
-            </li>
-        </ul>
+        {{#transition-group transitionName="c"}}
+        <div class="c-modal-manual">
+            <div class="c-modal-manual__content">
+            <p>{{post.body}}</p>
+            <ul>
+                <li>
+                    <p>User Name: {{post.userId.username}} </p>
+                </li>
+                <li>
+                    <p>Company: {{post.userId.company.name}}</p>
+                </li>
+                <li>
+                    {{!-- TODO: Fix format --}}
+                    <p><a href="{{post.userId.website}}"></a></p>
+                </li>
+                <li>
+                    <p>Catchphrase: {{post.userId.company.catchPhrase}}</p>
+                </li>
+                <li>
+                    <p>Author's Name: {{post.userId.name}} </p>
+                </li>
+                <li>
+                    {{!-- TODO: Fix format --}}
+                    <p><a href="mailto:{{post.userId.email}}"></a></p>
+                </li>
+                <li>
+                    <p>City: {{post.userId.address.city}} </p>
+                </li>
+            </ul>
+            </div>
         </div>
-    </div>
+        {{/transition-group}}
     {{/if}}
 </div>
