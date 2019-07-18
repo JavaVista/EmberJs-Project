@@ -1,19 +1,20 @@
 <div class="listing">
-    <div class="container">
+    <div class="container shadow-md md:w-3/5 mx-auto p-8 sm:p-6 md:p-4 lg:p-2 xl:p-0">
         <h1>
             {{post.title}}
             <input type="checkbox" name="modal-toggle" id="modal-toggle" class="modal-toggle" {{action this.toggleContent on='click' }}/>
-            <label for="modal-toggle" onclick></label>
+            <label class="content-start sm:content-end md:content-center lg:content-between xl:content-around" for="modal-toggle" onclick></label>
         </h1>
     </div>
 
 
     {{#if this.showPost}}
         {{#transition-group transitionName="c"}}
-        <div class="c-modal-manual">
-            <div class="c-modal-manual__content">
-            <p>{{post.body}}</p>
-            <ul>
+        <div class="c-modal-manual w-full md:w-3/5 mx-auto p-8  sm:text-lg md:text-xl lg:text-xl xl:text-2xl">
+            <div class="c-modal-manual__content ">
+                <div class="text-left sm:text-center md:text-right lg:text-justify xl:text-center p-4"><p>{{post.body}}</p>
+                </div>
+            <ul  class="pb-4 pt-4">
                 <li>
                     <p>User Name: {{post.userId.username}} </p>
                 </li>

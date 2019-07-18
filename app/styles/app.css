@@ -1,74 +1,81 @@
+@import 'tailwind.css';
 body {
-    -webkit-animation: bugfix infinite 1s;
-  }
-  @-webkit-keyframes bugfix {
-    from {
-      padding: 0;
-    }
-    to {
-      padding: 0;
-    }
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #eee;
-  }
-  .modal-toggle {
-    position: absolute;
-    appearance: none;
-    left: -100%;
-    top: -100%;
-  }
-  label {
-    cursor: pointer;
-    user-select: none;
-  }
-  /* styling */
-  label {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 2em;
-    height: 2em;
-    background-color: #26ae90;
-    border-radius: 6px;
-    padding: 0 1em;
-    margin: 1em;
-    color: #eee;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-  }
-  label:after {
-    content: "show me";
-  }
-  .c-modal-manual {
-    padding: 20px;
-    background: #666;
-    overflow: hidden;
-    box-sizing: border-box;
-    transition: all 0.6s ease-in-out 0s;
-    -webkit-transform-origin: top;
-    -o-transform-origin: top;
-    -ms-transform-origin: top;
-    transform-origin: top;
-  }
-  .c-modal-manual__content {
-    line-height: 80px;
-    background: #181818;
-    color: #eee;
-    text-align: center;
-  }
-  /* checked */
-  .modal-toggle:checked ~ .c-modal-manual {
-    -webkit-transform: translateX(-50%) scaleY(1);
-    -o-transform: translateX(-50%) scaleY(1);
-    -ms-transform: translateX(-50%) scaleY(1);
-    transform: translateX(-50%) scaleY(1);
-  }
-  .modal-toggle:checked + label {
-    background: #dd6149;
-  }
-  .modal-toggle:checked + label:after {
-    content: "put it away";
-  }
-  
+  background-color: #eee;
+}
+ul {
+  list-style-type: none;
+}
+.modal-toggle {
+  position: absolute;
+  appearance: none;
+  left: -100%;
+  top: -100%;
+}
+label {
+  cursor: pointer;
+  user-select: none;
+}
+/* styling */
+label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 2em;
+  height: 2em;
+  background-color: #26ae90;
+  border-radius: 6px;
+  padding: 0 1em;
+  margin: 1em;
+  color: #eee;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+label:after {
+  content: 'more...';
+}
+.c-modal-manual {
+  border-radius: 0 0 2% 2%;
+  padding: 10px;
+  background: #666;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.6s ease-in-out 0s;
+  -webkit-transform-origin: top;
+  -o-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+}
+.c-modal-manual__content {
+  border-radius: 0 0 2% 2%;
+  background: #181818;
+  color: #eee;
+}
+/* checked */
+.modal-toggle:checked ~ .c-modal-manual {
+  -webkit-transform: translateX(-50%) scaleY(1);
+  -o-transform: translateX(-50%) scaleY(1);
+  -ms-transform: translateX(-50%) scaleY(1);
+  transform: translateX(-50%) scaleY(1);
+}
+.modal-toggle:checked + label {
+  background: #dd6149;
+}
+.pagination {
+  display: flex;
+  margin: 0 auto;
+  color: #666;
+}
+ul.pagination {
+  align-items: center;
+  justify-content: center;
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+}
+
+ul.pagination li {
+  display: inline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 10px;
+}
+
