@@ -39,7 +39,7 @@ Neighborhood Map - Mobile
 
 ## Demo
 
-[App Demo](https://ember-js-project.netlify.com/pos)
+[App Demo](https://ember-js-project.netlify.com/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/779785f2-aac9-4eb8-a9d7-ed8c6240e434/deploy-status)](https://app.netlify.com/sites/ember-js-project/deploys)
 
