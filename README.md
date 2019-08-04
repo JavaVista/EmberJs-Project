@@ -4,21 +4,21 @@ I developed this SPA using the Ember.js Framework that request and shows data fr
 
 ## Table of Contents
 
-- [Ember-js-project](#Ember-js-project)
-  - [Table of Contents](#Table-of-Contents)
-  - [Requirements](#Requirements)
-    - [Screenshot](#Screenshot)
-  - [Demo](#Demo)
-  - [Technology](#Technology)
-  - [Prerequisites](#Prerequisites)
-  - [Installation](#Installation)
-  - [Running / Development](#Running--Development)
-    - [Code Generators](#Code-Generators)
-    - [Running Tests](#Running-Tests)
-    - [Linting](#Linting)
-    - [Building](#Building)
-    - [Deploying](#Deploying)
-  - [Contact / Social Media](#Contact--Social-Media)
+- [Ember-js-project](#ember-js-project)
+  - [Table of Contents](#table-of-contents)
+  - [Requirements](#requirements)
+    - [Screenshot](#screenshot)
+  - [Demo](#demo)
+  - [Technology](#technology)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running / Development](#running--development)
+    - [Code Generators](#code-generators)
+    - [Running Tests](#running-tests)
+    - [Linting](#linting)
+    - [Building](#building)
+    - [Deploying](#deploying)
+  - [Contact / Social Media](#contact--social-media)
 
 ## Requirements
 
@@ -32,10 +32,10 @@ I developed this SPA using the Ember.js Framework that request and shows data fr
 ### Screenshot
 
 ![Screenshot](public/fullscreen.png)
-Neighborhood Map - Screenshot
+List of Post - Screenshot
 
 ![Mobile - Screenshot](public/mobile_iphone7spacegrey_portrait.png)
-Neighborhood Map - Mobile
+List of Post - Mobile
 
 ## Demo
 
